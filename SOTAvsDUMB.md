@@ -14,7 +14,7 @@ It has intuitively made sense to me for a while (since before I was aware of NoP
 
 The prevalence of so many (again, admittedly often elegant) modifications to RoPE is a testament to the power of incremental advances... But I daresay that all those interpolation, extrapolation, landmark, beacon, etc. techniques might also be red flags; signs of a deeper problem (no, r/localllama, I haven't tried Ultrapolation yet).
 
-The "no positional embeddings" research is interesting for other reasons than just wanting a 1,524,031-token input with 42 max new tokens (and only setting the latter):
+The "no position embeddings" research is interesting for other reasons than just wanting a 1,524,031-token input with 42 max new tokens (and only setting the latter):
 1. It seems (to me, at least) severely underexplored, contrary to the constant drumbeat of PE techniques and modifications. 
 2. Not because it's an idea that I had (though in this case, I did; years after some of these papers were published, yet before I was aware of/bothered to Google them, at least), but because it's exactly the kind of "that's just dumb enough to work..." idea that I would have.
 
