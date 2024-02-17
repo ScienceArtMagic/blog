@@ -2,7 +2,7 @@
 
 Am I the only one who feels like the numerous advances in rotary position embeddings (RoPE), no matter how elegant some of them may be, are ultimately just bandaids? I don't claim to have all (well, any) of the answers. Still, I do know that a few papers (very few, from what I can find) investigate whether positional embeddings (PE) are required at all and, in a few cases, find that models NOT using PE generalize context length better than their counterparts with absolute (APE), relative (RPE), and rotary (RoPE) position embeddings.
 
-Frankly, having a set context length AT ALL doesn't feel great. Speaking from a UX background (and DX to a lesser degree in both senses) in particular: Requiring an exact, preset context length feels like a design decision made with little if any consideration for the user, even if targeting a more technical one. 
+Frankly, having a set context length AT ALL doesn't feel great. Speaking from a UX background in particular (and DX to a lesser degree, in both senses): Requiring an exact, preset context length feels like a design decision made with little if any consideration for the user, even if targeting a more technical one. 
 
 max_new_tokens is different. That has actual utility. Other than batch grouping (and I'm not at all convinced that that isn't a self-inflicted limitation either), what's useful about having to chunk, pad, and/or concatenate every single entry of training data?
 
