@@ -6,7 +6,7 @@ Frankly, having a set context length AT ALL doesn't feel great. Speaking from a 
 
 max_new_tokens is different. That has actual utility. Other than batch grouping (and I'm not at all convinced that that isn't a self-inflicted limitation either), what's useful about having to chunk, pad, and/or concatenate every single entry of training data?
 
-Recent papers ("The Reversal Curse: LLMs trained on 'A is B' fail to learn 'B is A'" and "Premise Order Matters in Reasoning With Large Language Models") may be indicators that AGI is still further away than the "We're so back!!!" crowd (or the "doomers") want to believe (or want us to believe). I think we have plenty of reasons to temper our anticipation/anxiety, not least of which is that these models are STILL just next <|thing|> predictors.
+Recent papers ("The Reversal Curse: LLMs trained on 'A is B' fail to learn 'B is A'" and "Premise Order Matters in Reasoning With Large Language Models") may be indicators that AGI is still further away than the "We're so back!!!" crowd (or the "doomers") want to believe (or want us to believe). I think we have plenty of reasons to temper our anticipation/anxiety, not least of which is that these models are STILL just next `<|thing|>` predictors.
 
 Personally, these papers serve to bolster my suspicion that positional embeddings, as they exist currently, actively harm generalization (in these cases, context itself rather than context length). While they expose a (perhaps far more obvious) need to rethink data processing, in the - well, context - of PE, these findings seem largely self-inflicted.
 
