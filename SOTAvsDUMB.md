@@ -1,6 +1,6 @@
 # "How can we beat SOTA by 0.1?" v3248520562918938704 vs. "That's just dumb enough to work!" (a.k.a. "Why can't I find any papers like this?")
 
-Am I the only one who feels like the numerous advances in rotary position embeddings (RoPE), no matter how elegant some of them may be, are ultimately just bandaids? I don't claim to have the answers. Still, I do know that a few papers (very few, from what I can find) investigate whether positional embeddings (PE) are required at all and, in a few cases, find that models NOT using PE generalize context length better than their counterparts with absolute (APE), relative (RPE), and rotary (RoPE) position embeddings.
+Am I the only one who feels like the numerous advances in rotary position embeddings (RoPE), no matter how elegant some of them may be, are ultimately just bandaids? I don't claim to have all (well, any) of the answers. Still, I do know that a few papers (very few, from what I can find) investigate whether positional embeddings (PE) are required at all and, in a few cases, find that models NOT using PE generalize context length better than their counterparts with absolute (APE), relative (RPE), and rotary (RoPE) position embeddings.
 
 Frankly, having a set context length AT ALL doesn't feel great. Speaking from a UX background (and DX to a lesser degree in both senses) in particular: Requiring an exact, preset context length feels like a design decision made with little if any consideration for the user, even if targeting a more technical one. 
 
